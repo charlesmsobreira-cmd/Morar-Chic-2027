@@ -1,0 +1,30 @@
+========================================================================
+MORAR CHIC — COMO ALTERAR O LOGOTIPO DO MENU SUPERIOR
+========================================================================
+
+Este diretório contém as versões da logomarca oficial da Morar Chic para
+o cabeçalho do site:
+
+1. logo-white.png (ou logo-branca.png):
+   - Versão em BRANCO com fundo transparente.
+   - Utilizada automaticamente quando o menu superior está sobre o banner
+     inicial escuro ou quando o menu lateral (drawer) está aberto.
+
+2. logo-dark.png (ou logo-preta.png):
+   - Versão em PRETO / ESCURO com fundo transparente.
+   - Utilizada automaticamente após a transformação do menu superior
+     (quando o menu ganha fundo branco ao rolar a página ou no hover).
+
+PASSO A PASSO PARA SUBSTITUIR COM A SUA LOGO OFICIAL:
+1. Copie o arquivo da sua logo em versão branca para esta pasta com o nome:
+   logo-white.png
+2. Copie o arquivo da sua logo em versão escura/preta para esta pasta com o nome:
+   logo-dark.png
+3. Atualize o navegador (F5 / Ctrl + F5).
+4. O sistema fará a transição automática suave entre a logo branca e a logo escura!
+
+OBSERVAÇÕES:
+- Formato recomendado: PNG transparente de alta definição ou SVG.
+- Altura elegante proporcional automática (~28px a 34px).
+- Fallback seguro para o texto "MORAR CHIC" caso algum arquivo não esteja presente.
+========================================================================

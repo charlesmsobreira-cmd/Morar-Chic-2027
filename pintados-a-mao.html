@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pintados à Mão — Morar Chic</title>
+  <meta name="description" content="Pintados à Mão Morar Chic: porcelanas nobres, pratos de parede, sopeiras e centros de mesa pincelados artesanalmente com filetes em ouro.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Montserrat:wght@300;400;500;600&family=Pinyon+Script&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=20261104-noborder">
+</head>
+<body class="site-loaded subpage-collection-body lv-mag-body" data-subpage="pintados-a-mao">
+
+  <!-- ==================== HEADER SUPERIOR (LOUIS VUITTON STYLE COM TRANSIÇÃO DE LOGO) ==================== -->
+  <header class="site-header lv-header scrolled subpage-solid-header" id="siteHeader">
+    <div class="inner-header lv-header-inner">
+
+      <!-- Esquerda: [☰ Menu] e [🔍 Buscar] -->
+      <div class="lv-header-left">
+        <button type="button" class="lv-nav-btn lv-menu-trigger" id="hamburgerBtn" aria-expanded="false" aria-label="Menu">
+          <svg class="lv-nav-icon" width="16" height="12" viewBox="0 0 16 12" fill="none" stroke="currentColor" stroke-width="1.4">
+            <line x1="0" y1="1.5" x2="16" y2="1.5"/>
+            <line x1="0" y1="6" x2="16" y2="6"/>
+            <line x1="0" y1="10.5" x2="16" y2="10.5"/>
+          </svg>
+          <span class="lv-nav-text">Menu</span>
+        </button>
+
+        <button type="button" class="lv-nav-btn lv-search-trigger" id="lvSearchTrigger" aria-expanded="false" aria-label="Buscar">
+          <svg class="lv-nav-icon" width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4">
+            <circle cx="6.8" cy="6.8" r="5.5"/>
+            <line x1="10.8" y1="10.8" x2="15" y2="15"/>
+          </svg>
+          <span class="lv-nav-text">Buscar</span>
+        </button>
+      </div>
+
+      <!-- Centro: Logotipo MORAR CHIC -->
+      <div class="lv-header-center">
+        <a href="index.html" class="lv-brand-logo" aria-label="Morar Chic — Voltar ao Início">
+          <img src="assets/logo/logo-white.png" alt="Morar Chic" class="lv-logo-img lv-logo-white" onerror="this.src='assets/logo/logo.png';">
+          <img src="assets/logo/logo-dark.png" alt="Morar Chic" class="lv-logo-img lv-logo-dark" onerror="this.src='assets/logo/logo.png';">
+          <span class="lv-logo-wordmark" style="display: none;">MORAR CHIC</span>
+        </a>
+      </div>
+
+      <!-- Direita: [Contate-nos] [Sacola] [Minha Conta] -->
+      <div class="lv-header-right">
+        <a href="https://wa.me/5517997140030?text=Ol%C3%A1!%20Gostaria%20de%20falar%20sobre%20as%20pe%C3%A7as%20Pintadas%20%C3%A0%20M%C3%A3o%20da%20Morar%20Chic." target="_blank" rel="noopener noreferrer" class="lv-nav-btn lv-contact-link">
+          <span class="lv-nav-text">Contate-nos</span>
+        </a>
+
+        <!-- Sacola de Compras -->
+        <button type="button" class="lv-nav-btn lv-icon-only-btn lv-bag-btn" id="lvBagBtn" aria-label="Sacola de Compras">
+          <div class="lv-bag-icon-wrapper">
+            <svg class="lv-nav-icon" width="16" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
+              <line x1="3" y1="6" x2="21" y2="6"/>
+              <path d="M16 10a4 4 0 0 1-8 0"/>
+            </svg>
+            <span class="lv-bag-badge" id="lvBagBadge" style="display: none;">0</span>
+          </div>
+        </button>
+
+        <button type="button" class="lv-nav-btn lv-icon-only-btn lv-account-btn" id="accountTriggerBtn" aria-label="Minha Conta">
+          <svg class="lv-nav-icon" width="15" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+            <circle cx="12" cy="7" r="4"/>
+          </svg>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- ==================== PAINEL DE BUSCA LOUIS VUITTON ==================== -->
+    <div class="lv-search-panel" id="lvSearchPanel" aria-hidden="true">
+      <div class="lv-search-container">
+        <div class="lv-search-bar">
+          <svg class="lv-search-icon" width="18" height="18" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4">
+            <circle cx="6.8" cy="6.8" r="5.5"/>
+            <line x1="10.8" y1="10.8" x2="15" y2="15"/>
+          </svg>
+          <input type="text" class="lv-search-input" id="lvSearchInput" placeholder="O que você procura? (ex: Pintados à Mão, Pratos, Jarras, Louças...)" aria-label="Buscar produtos">
+          <button type="button" class="lv-search-close-btn" id="lvSearchCloseBtn" aria-label="Fechar Busca">&times;</button>
+        </div>
+        <div class="lv-search-suggestions">
+          <span class="lv-suggest-title">Buscas em alta:</span>
+          <button type="button" class="lv-suggest-pill" data-query="pintados à mão">Pintados à Mão</button>
+          <button type="button" class="lv-suggest-pill" data-query="toile">Jardim de Toile</button>
+          <button type="button" class="lv-suggest-pill" data-query="louças">Louças</button>
+          <button type="button" class="lv-suggest-pill" data-query="prataria">Prataria e Ouro</button>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="lv-header-backdrop" id="lvHeaderBackdrop"></div>
+
+  <!-- ==================== MENU LATERAL DA MORAR CHIC ==================== -->
+  <div class="morar-drawer-backdrop" id="drawerBackdrop"></div>
+  <aside class="morar-drawer" id="lateralDrawer" aria-hidden="true" aria-label="Menu Principal">
+    <div class="morar-drawer-inner">
+      <div class="drawer-top-bar">
+        <button type="button" class="drawer-close-btn" id="closeDrawerBtn" aria-label="Fechar Menu">
+          <svg class="drawer-top-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <line x1="18" y1="6" x2="6" y2="18"/>
+            <line x1="6" y1="6" x2="18" y2="18"/>
+          </svg>
+          <span>Close</span>
+        </button>
+
+        <div class="drawer-search-trigger" id="drawerSearchTrigger">
+          <svg class="drawer-top-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <circle cx="11" cy="11" r="7"/>
+            <line x1="21" y1="21" x2="16.5" y2="16.5"/>
+          </svg>
+          <input type="text" class="drawer-search-input" id="drawerSearchInput" placeholder="Pesquisar" aria-label="Pesquisar no menu">
+        </div>
+      </div>
+
+      <nav class="drawer-nav" aria-label="Categorias Morar Chic">
+        <ul class="drawer-nav-list">
+          <li><a href="index.html#cama" class="drawer-nav-link">Camas</a></li>
+          <li><a href="index.html#mesa-posta" class="drawer-nav-link">Mesa Posta</a></li>
+          <li><a href="index.html#banho-e-aromas" class="drawer-nav-link">Banho e Aromas</a></li>
+          <li><a href="index.html#decoracao" class="drawer-nav-link">Decoração</a></li>
+          <li><a href="pintados-a-mao.html" class="drawer-nav-link active">Pintados à Mão</a></li>
+          <li><a href="index.html#prataria-e-ouro" class="drawer-nav-link">Prataria e Ouro</a></li>
+          <li><a href="index.html#sale" class="drawer-nav-link drawer-sale-link">Sale</a></li>
+        </ul>
+
+        <div class="drawer-secondary-nav">
+          <a href="index.html" class="drawer-sec-link">Voltar para a Página Inicial</a>
+          <a href="colecao-jardim-de-toile.html" class="drawer-sec-link">Coleção Jardim de Toile</a>
+          <a href="index.html#institucional" class="drawer-sec-link">A Arte de Morar Chic</a>
+        </div>
+      </nav>
+
+      <div class="drawer-utility-footer">
+        <a href="#rodape" class="drawer-util-item" id="drawerAccountBtn">
+          <svg class="drawer-util-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+            <circle cx="12" cy="7" r="4"/>
+          </svg>
+          <span>Entrar ou Registrar-se</span>
+        </a>
+
+        <button type="button" class="drawer-util-item" id="drawerCartBtn">
+          <svg class="drawer-util-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <path d="M16 10a4 4 0 0 1-8 0"/>
+          </svg>
+          <span>Sacola de Compras</span>
+        </button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ==================== CONTEÚDO EDITORIAL LOUIS VUITTON MAGAZINE ==================== -->
+  <main class="lv-mag-main" id="subpageTop">
+
+    <!-- =========================================================================
+         1. BLOCO EDITORIAL DE ABERTURA NO TOPO DA PÁGINA (CENTRALIZADO)
+         - TÍTULO, TEXTO INTRODUTÓRIO E MENU HORIZONTAL DE FÁCIL EDIÇÃO
+         ========================================================================= -->
+    <section class="lv-mag-header-section" aria-labelledby="pintadosPageTitle">
+      <div class="lv-mag-header-container">
+
+        <!-- TÍTULO PRINCIPAL (FÁCIL EDIÇÃO) -->
+        <h1 class="lv-mag-page-title" id="pintadosPageTitle">Pintados à Mão</h1>
+
+        <!-- TEXTO INTRODUTÓRIO (FÁCIL EDIÇÃO) -->
+        <p class="lv-mag-page-description" id="pintadosPageDesc">
+          Cada pincelada carrega a alma do artista. Porcelanas nobres, pratos de parede, jarras e centros de mesa com traços autorais exclusivos, pincelados artesanalmente com filetes a ouro que transformam a mesa e a casa em uma galeria viva.
+        </p>
+
+        <!-- MENU DE NAVEGAÇÃO HORIZONTAL ENTRE CATEGORIAS (FÁCIL EDIÇÃO) -->
+        <nav class="lv-collections-nav" aria-label="Navegação da Coleção Pintados à Mão">
+          <ul class="lv-collections-nav-list" id="pintadosNavList">
+            <li><a href="#todas-as-obras" class="lv-collection-nav-link active" aria-current="page">Todas as Obras</a></li>
+            <li><a href="#arte-da-mesa" class="lv-collection-nav-link">Porcelanas de Mesa</a></li>
+            <li><a href="#pratos-de-parede" class="lv-collection-nav-link">Pratos de Parede</a></li>
+            <li><a href="#centros-de-mesa" class="lv-collection-nav-link">Centros de Mesa &amp; Jarras</a></li>
+            <li><a href="#encomendas" class="lv-collection-nav-link">Projetos Sob Encomenda</a></li>
+          </ul>
+        </nav>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         2. CAPÍTULO I — SHOWCASE ASSIMÉTRICO (LAYOUT DA IMAGEM DE REFERÊNCIA)
+         - Coluna Esquerda: Imagem grande vertical (SLOT 02)
+         - Coluna Direita: Texto no canto superior direito + Imagem abaixo (SLOT 03)
+         ========================================================================= -->
+    <section class="lv-mag-asym-section" id="todas-as-obras" aria-label="Showcase Principal">
+      <div class="lv-mag-asym-container">
+
+        <!-- Coluna Esquerda: Imagem Grande -->
+        <div class="lv-mag-asym-left">
+          <figure class="lv-mag-figure">
+            <div class="lv-mag-slot lv-mag-slot--asym-large" data-slot="02">
+              <img
+                src="assets/images/pintados-slot-02.jpg"
+                alt="Pintura artesanal sobre porcelana — Imagem Principal Esquerda"
+                class="lv-mag-slot-img"
+                onload="this.parentElement.classList.add('has-image')"
+                onerror="this.parentElement.classList.remove('has-image')"
+              >
+              <div class="lv-mag-slot-placeholder">
+                <span class="lv-mag-slot-badge">SLOT 02 • IMAGEM PRINCIPAL ESQUERDA</span>
+                <svg class="lv-mag-slot-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.1">
+                  <rect x="3" y="2" width="18" height="20" rx="1"/>
+                  <circle cx="9" cy="8" r="1.6"/>
+                  <path d="M21 16l-5-5L5 22"/>
+                </svg>
+                <strong class="lv-mag-slot-title">Foto Vertical Principal</strong>
+                <span class="lv-mag-slot-meta">Proporção 4:5 • <code>assets/images/pintados-slot-02.jpg</code></span>
+              </div>
+            </div>
+          </figure>
+        </div>
+
+        <!-- Coluna Direita: Texto no Canto Superior Direito + Imagem Abaixo -->
+        <div class="lv-mag-asym-right">
+
+          <!-- Texto no Canto Superior Direito (Fácil Edição) -->
+          <div class="lv-mag-asym-text-block" id="arte-da-mesa">
+            <h2 class="lv-mag-asym-title" id="asymSecTitle">Ícones Reimaginados</h2>
+            <p class="lv-mag-asym-desc" id="asymSecDesc">
+              Na Sala Napoleonica, a coleção em homenagem a Pierre Legrain ocupa o centro da cena, reunindo têxteis gráficos, móveis laqueados e criações de tableware inspiradas nas encadernações e nos arquivos do artista.
+            </p>
+          </div>
+
+          <!-- Imagem no Lado Direito Posicionada Abaixo do Texto -->
+          <div class="lv-mag-asym-media-block">
+            <figure class="lv-mag-figure">
+              <div class="lv-mag-slot lv-mag-slot--asym-right" data-slot="03">
+                <img
+                  src="assets/images/pintados-slot-03.jpg"
+                  alt="Ambientação e mesa posta — Imagem Direita"
+                  class="lv-mag-slot-img"
+                  onload="this.parentElement.classList.add('has-image')"
+                  onerror="this.parentElement.classList.remove('has-image')"
+                >
+                <div class="lv-mag-slot-placeholder">
+                  <span class="lv-mag-slot-badge">SLOT 03 • IMAGEM DIREITA</span>
+                  <svg class="lv-mag-slot-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.1">
+                    <rect x="3" y="2" width="18" height="20" rx="1"/>
+                    <circle cx="9" cy="8" r="1.6"/>
+                    <path d="M21 16l-5-5L5 22"/>
+                  </svg>
+                  <strong class="lv-mag-slot-title">Foto de Ambientação Direita</strong>
+                  <span class="lv-mag-slot-meta">Proporção 4:5 • <code>assets/images/pintados-slot-03.jpg</code></span>
+                </div>
+              </div>
+            </figure>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         3. CAPÍTULO II — PANORAMA CINEMATOGRÁFICO (SLOT 04 — 16:9 LARGO + TEXTO)
+         ========================================================================= -->
+    <section class="lv-mag-chapter" id="savoir-faire" aria-label="Savoir-Faire do Atelier">
+      <div class="lv-mag-container lv-mag-container--wide">
+        <figure class="lv-mag-figure">
+          <div class="lv-mag-slot lv-mag-slot--panorama" data-slot="04">
+            <img
+              src="assets/images/pintados-slot-04.jpg"
+              alt="Mesa posta completa com aparelhos de jantar pintados à mão Morar Chic"
+              class="lv-mag-slot-img"
+              onload="this.parentElement.classList.add('has-image')"
+              onerror="this.parentElement.classList.remove('has-image')"
+            >
+            <div class="lv-mag-slot-placeholder">
+              <span class="lv-mag-slot-badge">SLOT 04 • PANORAMA EDITORIAL</span>
+              <svg class="lv-mag-slot-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.1">
+                <rect x="2" y="4" width="20" height="16" rx="1"/>
+                <circle cx="8.5" cy="9.5" r="1.8"/>
+                <path d="M22 16l-5.5-5.5L6 20"/>
+              </svg>
+              <strong class="lv-mag-slot-title">Banner Panorâmico — Cenário Completo da Coleção</strong>
+              <span class="lv-mag-slot-meta">Proporção 16:9 • <code>assets/images/pintados-slot-04.jpg</code></span>
+            </div>
+          </div>
+        </figure>
+      </div>
+
+      <div class="lv-mag-text-box">
+        <span class="lv-mag-eyebrow">THE SIGNATURE COLLECTION</span>
+        <h2 class="lv-mag-section-title">O Tempo, o Traço e o Ouro</h2>
+        <p class="lv-mag-paragraph">
+          Cada peça atravessa múltiplas queimas em alta temperatura para fixar a profundidade dos tons e o brilho acetinado do ouro líquido aplicado manualmente nas bordas. O resultado é um equilíbrio raro entre rigor técnico e poesia visual, assinado pelos mestres artesãos parceiros da Morar Chic.
+        </p>
+        <div class="lv-mag-cta-wrap">
+          <a href="https://wa.me/5517997140030?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20a%20Signature%20Collection%20Pintados%20%C3%A0%20M%C3%A3o." target="_blank" rel="noopener noreferrer" class="lv-mag-link">Conheça o Savoir-Faire</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         4. CAPÍTULO III — SEÇÕES SPLIT ALTERNADAS (ESTILO MILAN DESIGN WEEK)
+            - Split 1: Imagem na Esquerda (SLOT 05) + Texto na Direita
+            - Split 2: Texto na Esquerda + Imagem na Direita (SLOT 06)
+         ========================================================================= -->
+    <section class="lv-mag-chapter lv-mag-chapter--splits" aria-label="Pilares da Coleção Pintados à Mão">
+      <div class="lv-mag-container">
+
+        <!-- SPLIT 01: Imagem à Esquerda (SLOT 05) | Texto à Direita -->
+        <div class="lv-mag-split-row">
+          <div class="lv-mag-split-media">
+            <div class="lv-mag-slot lv-mag-slot--split" data-slot="05">
+              <img
+                src="assets/images/pintados-slot-05.jpg"
+                alt="Coleção Botânica &amp; Fauna Real em Porcelana"
+                class="lv-mag-slot-img"
+                onload="this.parentElement.classList.add('has-image')"
+                onerror="this.parentElement.classList.remove('has-image')"
+              >
+              <div class="lv-mag-slot-placeholder">
+                <span class="lv-mag-slot-badge">SLOT 05 • EDITORIAL SPLIT I</span>
+                <svg class="lv-mag-slot-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.1">
+                  <rect x="3" y="2" width="18" height="20" rx="1"/>
+                  <circle cx="9" cy="8" r="1.6"/>
+                  <path d="M21 16l-5-5L5 22"/>
+                </svg>
+                <strong class="lv-mag-slot-title">Coleção Botânica &amp; Fauna Real</strong>
+                <span class="lv-mag-slot-meta">Proporção 4:5 • <code>assets/images/pintados-slot-05.jpg</code></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="lv-mag-split-content">
+            <span class="lv-mag-eyebrow">HERBARIUM &amp; NATUREZA</span>
+            <h3 class="lv-mag-split-title">Botânica Imperial &amp; Jardins Particulares</h3>
+            <p class="lv-mag-paragraph">
+              Inspirada nos herbários clássicos e nos jardins mediterrâneos, esta série retrata parreiras, figos, limões sicilianos e flores silvestres com riqueza botânica impressionante. Perfeita para compor mesas solares em varandas gourmet e salas de jantar sofisticadas.
+            </p>
+            <div class="lv-mag-cta-wrap lv-mag-cta-wrap--left">
+              <a href="https://wa.me/5517997140030?text=Ol%C3%A1!%20Quero%20explorar%20a%20Cole%C3%A7%C3%A3o%20Bot%C3%A2nica%20Pintada%20%C3%A0%20M%C3%A3o." target="_blank" rel="noopener noreferrer" class="lv-mag-link">Explore a Linha Botânica</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- SPLIT 02: Texto à Esquerda | Imagem à Direita (SLOT 06) -->
+        <div class="lv-mag-split-row lv-mag-split-row--reverse" id="pratos-de-parede">
+          <div class="lv-mag-split-media">
+            <div class="lv-mag-slot lv-mag-slot--split" data-slot="06">
+              <img
+                src="assets/images/pintados-slot-06.jpg"
+                alt="Pratos de Parede &amp; Obras de Galeria Residencial"
+                class="lv-mag-slot-img"
+                onload="this.parentElement.classList.add('has-image')"
+                onerror="this.parentElement.classList.remove('has-image')"
+              >
+              <div class="lv-mag-slot-placeholder">
+                <span class="lv-mag-slot-badge">SLOT 06 • EDITORIAL SPLIT II</span>
+                <svg class="lv-mag-slot-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.1">
+                  <rect x="3" y="2" width="18" height="20" rx="1"/>
+                  <circle cx="9" cy="8" r="1.6"/>
+                  <path d="M21 16l-5-5L5 22"/>
+                </svg>
+                <strong class="lv-mag-slot-title">Pratos de Parede &amp; Alta Decoração</strong>
+                <span class="lv-mag-slot-meta">Proporção 4:5 • <code>assets/images/pintados-slot-06.jpg</code></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="lv-mag-split-content">
+            <span class="lv-mag-eyebrow">OBJETS D'ART &amp; DECORAÇÃO</span>
+            <h3 class="lv-mag-split-title">Pratos de Parede &amp; Galeria Residencial</h3>
+            <p class="lv-mag-paragraph">
+              Mais do que utensílios de mesa, os pratos de parede Pintados à Mão funcionam como verdadeiras telas em porcelana. Com brasões históricos, arabescos barrocos e bordas vazadas ou filetadas a ouro, vestem paredes e estantes com a presença de um acervo de colecionador.
+            </p>
+            <div class="lv-mag-cta-wrap lv-mag-cta-wrap--left">
+              <a href="https://wa.me/5517997140030?text=Ol%C3%A1!%20Gostaria%20de%20ver%20os%20Pratos%20de%20Parede%20Pintados%20%C3%A0%20M%C3%A3o." target="_blank" rel="noopener noreferrer" class="lv-mag-link">Explore Pratos de Parede</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         5. CAPÍTULO IV — DUO ESCULTURAL (SLOTS 07 E 08 + TEXTO CENTRALIZADO)
+         ========================================================================= -->
+    <section class="lv-mag-chapter" id="centros-de-mesa" aria-label="Centros de Mesa, Sopeiras e Jarras">
+      <div class="lv-mag-container">
+        <div class="lv-mag-diptych">
+
+          <!-- SLOT 07 (Quadrado/Retrato 1:1) -->
+          <figure class="lv-mag-figure">
+            <div class="lv-mag-slot lv-mag-slot--square" data-slot="07">
+              <img
+                src="assets/images/pintados-slot-07.jpg"
+                alt="Sopeira Imperial Pintada à Mão"
+                class="lv-mag-slot-img"
+                onload="this.parentElement.classList.add('has-image')"
+                onerror="this.parentElement.classList.remove('has-image')"
+              >
+              <div class="lv-mag-slot-placeholder">
+                <span class="lv-mag-slot-badge">SLOT 07 • DUO ESCULTURAL I</span>
+                <svg class="lv-mag-slot-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.1">
+                  <rect x="3" y="3" width="18" height="18" rx="1"/>
+                  <circle cx="9" cy="9" r="1.6"/>
+                  <path d="M21 15l-5-5L5 21"/>
+                </svg>
+                <strong class="lv-mag-slot-title">Sopeiras &amp; Centros de Mesa</strong>
+                <span class="lv-mag-slot-meta">Proporção 1:1 • <code>assets/images/pintados-slot-07.jpg</code></span>
+              </div>
+            </div>
+          </figure>
+
+          <!-- SLOT 08 (Quadrado/Retrato 1:1) -->
+          <figure class="lv-mag-figure">
+            <div class="lv-mag-slot lv-mag-slot--square" data-slot="08">
+              <img
+                src="assets/images/pintados-slot-08.jpg"
+                alt="Jarras, Cachepots e Ânforas Pinceladas à Mão"
+                class="lv-mag-slot-img"
+                onload="this.parentElement.classList.add('has-image')"
+                onerror="this.parentElement.classList.remove('has-image')"
+              >
+              <div class="lv-mag-slot-placeholder">
+                <span class="lv-mag-slot-badge">SLOT 08 • DUO ESCULTURAL II</span>
+                <svg class="lv-mag-slot-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.1">
+                  <rect x="3" y="3" width="18" height="18" rx="1"/>
+                  <circle cx="9" cy="9" r="1.6"/>
+                  <path d="M21 15l-5-5L5 21"/>
+                </svg>
+                <strong class="lv-mag-slot-title">Jarras, Cachepots &amp; Ânforas</strong>
+                <span class="lv-mag-slot-meta">Proporção 1:1 • <code>assets/images/pintados-slot-08.jpg</code></span>
+              </div>
+            </div>
+          </figure>
+
+        </div>
+      </div>
+
+      <div class="lv-mag-text-box">
+        <span class="lv-mag-eyebrow">PEÇAS PROTAGONISTAS</span>
+        <h2 class="lv-mag-section-title">Sopeiras, Centros de Mesa &amp; Jarras</h2>
+        <p class="lv-mag-paragraph">
+          No centro da composição, sopeiras esculturais, cachepots e jarras pintadas à mão assumem o protagonismo absoluto. Modeladas com alças trabalhadas em relevo e tampas coroadas por frutos ou flores esculpidos, são peças-joia feitas para atravessar gerações.
+        </p>
+        <div class="lv-mag-cta-wrap">
+          <a href="https://wa.me/5517997140030?text=Ol%C3%A1!%20Gostaria%20de%20conhecer%20as%20Sopeiras%20e%20Centros%20de%20Mesa%20Pintados%20%C3%A0%20M%C3%A3o." target="_blank" rel="noopener noreferrer" class="lv-mag-link">Solicitar Curadoria</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         6. CAPÍTULO V — A SELEÇÃO DO ATELIER (GRID DE 4 PRODUTOS — SLOTS 09 A 12)
+         ========================================================================= -->
+    <section class="lv-mag-products-section" id="selecao-atelier" aria-label="Seleção de Produtos Pintados à Mão">
+      <div class="lv-mag-container">
+        <div class="lv-mag-products-header">
+          <span class="lv-mag-eyebrow">CURADORIA MORAR CHIC</span>
+          <h2 class="lv-mag-section-title">A Seleção Pintados à Mão</h2>
+        </div>
+
+        <div class="lv-mag-products-grid">
+
+          <!-- PRODUTO SLOT 09 -->
+          <article class="lv-mag-product-card">
+            <a href="https://wa.me/5517997140030?text=Ol%C3%A1!%20Tenho%20interesse%20no%20Prato%20Raso%20Bot%C3%A2nica%20Pintado%20%C3%A0%20M%C3%A3o." target="_blank" rel="noopener noreferrer" class="lv-mag-product-link">
+              <div class="lv-mag-slot lv-mag-slot--product" data-slot="09">
+                <img
+                  src="assets/images/pintados-slot-09.jpg"
+                  alt="Prato Raso Botânica Pintado à Mão"
+                  class="lv-mag-slot-img"
+                  onload="this.parentElement.classList.add('has-image')"
+                  onerror="this.parentElement.classList.remove('has-image')"
+                >
+                <div class="lv-mag-slot-placeholder">
+                  <span class="lv-mag-slot-badge">SLOT 09 • PRODUTO 01</span>
+                  <strong class="lv-mag-slot-title">Foto de Produto 01</strong>
+                  <span class="lv-mag-slot-meta">1:1 • <code>pintados-slot-09.jpg</code></span>
+                </div>
+              </div>
+              <div class="lv-mag-product-info">
+                <h3 class="lv-mag-product-name">Prato Raso Botânica Imperial</h3>
+                <span class="lv-mag-product-sub">Porcelana Pintada à Mão com Filete em Ouro</span>
+              </div>
+            </a>
+          </article>
+
+          <!-- PRODUTO SLOT 10 -->
+          <article class="lv-mag-product-card">
+            <a href="https://wa.me/5517997140030?text=Ol%C3%A1!%20Tenho%20interesse%20na%20Sopeira%20Pintada%20%C3%A0%20M%C3%A3o." target="_blank" rel="noopener noreferrer" class="lv-mag-product-link">
+              <div class="lv-mag-slot lv-mag-slot--product" data-slot="10">
+                <img
+                  src="assets/images/pintados-slot-10.jpg"
+                  alt="Sopeira Escultural Pintada à Mão"
+                  class="lv-mag-slot-img"
+                  onload="this.parentElement.classList.add('has-image')"
+                  onerror="this.parentElement.classList.remove('has-image')"
+                >
+                <div class="lv-mag-slot-placeholder">
+                  <span class="lv-mag-slot-badge">SLOT 10 • PRODUTO 02</span>
+                  <strong class="lv-mag-slot-title">Foto de Produto 02</strong>
+                  <span class="lv-mag-slot-meta">1:1 • <code>pintados-slot-10.jpg</code></span>
+                </div>
+              </div>
+              <div class="lv-mag-product-info">
+                <h3 class="lv-mag-product-name">Sopeira Escultural Vindima</h3>
+                <span class="lv-mag-product-sub">Alto-Relevo Artesanal Pintado à Mão</span>
+              </div>
+            </a>
+          </article>
+
+          <!-- PRODUTO SLOT 11 -->
+          <article class="lv-mag-product-card">
+            <a href="https://wa.me/5517997140030?text=Ol%C3%A1!%20Tenho%20interesse%20no%20Prato%20de%20Parede%20Pintado%20%C3%A0%20M%C3%A3o." target="_blank" rel="noopener noreferrer" class="lv-mag-product-link">
+              <div class="lv-mag-slot lv-mag-slot--product" data-slot="11">
+                <img
+                  src="assets/images/pintados-slot-11.jpg"
+                  alt="Prato de Parede Flora &amp; Ouro 24k"
+                  class="lv-mag-slot-img"
+                  onload="this.parentElement.classList.add('has-image')"
+                  onerror="this.parentElement.classList.remove('has-image')"
+                >
+                <div class="lv-mag-slot-placeholder">
+                  <span class="lv-mag-slot-badge">SLOT 11 • PRODUTO 03</span>
+                  <strong class="lv-mag-slot-title">Foto de Produto 03</strong>
+                  <span class="lv-mag-slot-meta">1:1 • <code>pintados-slot-11.jpg</code></span>
+                </div>
+              </div>
+              <div class="lv-mag-product-info">
+                <h3 class="lv-mag-product-name">Prato de Parede Flora &amp; Ouro 24k</h3>
+                <span class="lv-mag-product-sub">Edição Numerada de Atelier</span>
+              </div>
+            </a>
+          </article>
+
+          <!-- PRODUTO SLOT 12 -->
+          <article class="lv-mag-product-card">
+            <a href="https://wa.me/5517997140030?text=Ol%C3%A1!%20Tenho%20interesse%20na%20Jarra%20em%20Porcelana%20Pintada%20%C3%A0%20M%C3%A3o." target="_blank" rel="noopener noreferrer" class="lv-mag-product-link">
+              <div class="lv-mag-slot lv-mag-slot--product" data-slot="12">
+                <img
+                  src="assets/images/pintados-slot-12.jpg"
+                  alt="Jarra em Porcelana Fina Pincelada à Mão"
+                  class="lv-mag-slot-img"
+                  onload="this.parentElement.classList.add('has-image')"
+                  onerror="this.parentElement.classList.remove('has-image')"
+                >
+                <div class="lv-mag-slot-placeholder">
+                  <span class="lv-mag-slot-badge">SLOT 12 • PRODUTO 04</span>
+                  <strong class="lv-mag-slot-title">Foto de Produto 04</strong>
+                  <span class="lv-mag-slot-meta">1:1 • <code>pintados-slot-12.jpg</code></span>
+                </div>
+              </div>
+              <div class="lv-mag-product-info">
+                <h3 class="lv-mag-product-name">Jarra Jardin d'Hiver em Porcelana</h3>
+                <span class="lv-mag-product-sub">Pintura Autoral &amp; Acabamento em Ouro</span>
+              </div>
+            </a>
+          </article>
+
+        </div>
+
+        <div class="lv-mag-cta-wrap lv-mag-cta-wrap--products">
+          <a href="https://wa.me/5517997140030?text=Ol%C3%A1!%20Gostaria%20de%20receber%20o%20cat%C3%A1logo%20completo%20de%20pe%C3%A7as%20Pintadas%20%C3%A0%20M%C3%A3o." target="_blank" rel="noopener noreferrer" class="lv-mag-pill-btn">Descobrir Todas as Peças</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         7. CAPÍTULO VI — TRÍPTICO EDITORIAL DE FECHAMENTO (SLOTS 13, 14 E 15)
+         ========================================================================= -->
+    <section class="lv-mag-triptych-section" id="encomendas" aria-label="Continue Explorando o Universo Morar Chic">
+      <div class="lv-mag-container">
+        <div class="lv-mag-triptych-header">
+          <span class="lv-mag-eyebrow">UNIVERSO MORAR CHIC</span>
+          <h2 class="lv-mag-section-title">Continue Explorando</h2>
+        </div>
+
+        <div class="lv-mag-triptych-grid">
+
+          <!-- CARD 1: SLOT 13 -->
+          <article class="lv-mag-triptych-card">
+            <a href="https://wa.me/5517997140030?text=Ol%C3%A1!%20Gostaria%20de%20fazer%20uma%20encomenda%20com%20monograma%20personalizado." target="_blank" rel="noopener noreferrer" class="lv-mag-triptych-media-link">
+              <div class="lv-mag-slot lv-mag-slot--triptych" data-slot="13">
+                <img
+                  src="assets/images/pintados-slot-13.jpg"
+                  alt="Monogramas &amp; Brasões Sob Medida"
+                  class="lv-mag-slot-img"
+                  onload="this.parentElement.classList.add('has-image')"
+                  onerror="this.parentElement.classList.remove('has-image')"
+                >
+                <div class="lv-mag-slot-placeholder">
+                  <span class="lv-mag-slot-badge">SLOT 13 • TRÍPTICO 01</span>
+                  <strong class="lv-mag-slot-title">Monogramas Sob Medida</strong>
+                  <span class="lv-mag-slot-meta">4:5 • <code>pintados-slot-13.jpg</code></span>
+                </div>
+              </div>
+            </a>
+            <h3 class="lv-mag-triptych-title">Monogramas &amp; Encomendas</h3>
+            <p class="lv-mag-triptych-desc">Personalização exclusiva de iniciais, brasões familiares e paletas sob medida.</p>
+            <a href="https://wa.me/5517997140030?text=Ol%C3%A1!%20Gostaria%20de%20fazer%20uma%20encomenda%20com%20monograma%20personalizado." target="_blank" rel="noopener noreferrer" class="lv-mag-link">Explore</a>
+          </article>
+
+          <!-- CARD 2: SLOT 14 -->
+          <article class="lv-mag-triptych-card">
+            <a href="colecao-jardim-de-toile.html" class="lv-mag-triptych-media-link">
+              <div class="lv-mag-slot lv-mag-slot--triptych" data-slot="14">
+                <img
+                  src="assets/images/pintados-slot-14.jpg"
+                  alt="Coleção Jardim de Toile Morar Chic"
+                  class="lv-mag-slot-img"
+                  onload="this.parentElement.classList.add('has-image')"
+                  onerror="this.parentElement.classList.remove('has-image')"
+                >
+                <div class="lv-mag-slot-placeholder">
+                  <span class="lv-mag-slot-badge">SLOT 14 • TRÍPTICO 02</span>
+                  <strong class="lv-mag-slot-title">Coleção Jardim de Toile</strong>
+                  <span class="lv-mag-slot-meta">4:5 • <code>pintados-slot-14.jpg</code></span>
+                </div>
+              </div>
+            </a>
+            <h3 class="lv-mag-triptych-title">Coleção Jardim de Toile</h3>
+            <p class="lv-mag-triptych-desc">A harmonia clássica do Toile de Jouy em enxovais e acessórios para a casa.</p>
+            <a href="colecao-jardim-de-toile.html" class="lv-mag-link">Explore</a>
+          </article>
+
+          <!-- CARD 3: SLOT 15 -->
+          <article class="lv-mag-triptych-card">
+            <a href="index.html#mesa-posta" class="lv-mag-triptych-media-link">
+              <div class="lv-mag-slot lv-mag-slot--triptych" data-slot="15">
+                <img
+                  src="assets/images/pintados-slot-15.jpg"
+                  alt="Louças &amp; Mesa Posta Morar Chic"
+                  class="lv-mag-slot-img"
+                  onload="this.parentElement.classList.add('has-image')"
+                  onerror="this.parentElement.classList.remove('has-image')"
+                >
+                <div class="lv-mag-slot-placeholder">
+                  <span class="lv-mag-slot-badge">SLOT 15 • TRÍPTICO 03</span>
+                  <strong class="lv-mag-slot-title">Louças &amp; Prataria</strong>
+                  <span class="lv-mag-slot-meta">4:5 • <code>pintados-slot-15.jpg</code></span>
+                </div>
+              </div>
+            </a>
+            <h3 class="lv-mag-triptych-title">Louças &amp; Arte da Mesa</h3>
+            <p class="lv-mag-triptych-desc">Curadoria completa de aparelhos de jantar, cristais e prataria nobre.</p>
+            <a href="index.html#mesa-posta" class="lv-mag-link">Explore</a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== FOOTER (DESIGN OFICIAL MORAR CHIC — FUNDO BRANCO) ==================== -->
+    <footer class="site-footer" id="rodape">
+      <div class="content-wrapper">
+        <div class="footer-main-grid">
+
+          <!-- COLUNA 1: LOGO MORAR CHIC + REDES SOCIAIS -->
+          <div class="footer-col footer-col-brand">
+            <a href="index.html" class="footer-brand-wrap" aria-label="Morar Chic Home">
+              <img src="assets/images/coroa-morarchic.png" alt="Morar Chic Coroa" class="footer-brand-crown">
+              <span class="footer-brand-title">MORAR <span class="footer-brand-bar">|</span> CHIC</span>
+            </a>
+
+            <!-- Redes Sociais em Tom Dourado/Bronze Elegante -->
+            <div class="footer-social-wrap">
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Facebook Morar Chic">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                </svg>
+              </a>
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Instagram Morar Chic">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- COLUNA 2: INSTITUCIONAL -->
+          <div class="footer-col footer-col-inst">
+            <h3 class="footer-col-title">INSTITUCIONAL</h3>
+            <ul class="footer-link-list">
+              <li><a href="index.html#institucional">Empresa</a></li>
+              <li><a href="index.html#como-comprar">Como comprar</a></li>
+              <li><a href="index.html#pagamentos">Pagamento e segurança</a></li>
+              <li><a href="index.html#envios">Prazos e envios</a></li>
+              <li><a href="index.html#trocas">Garantia, trocas e devoluções</a></li>
+              <li><a href="index.html#politicas">Políticas integrantes</a></li>
+              <li><a href="index.html#termos">Termos e condições de uso</a></li>
+              <li><a href="index.html#cashback">Regras do Cashback</a></li>
+              <li><a href="index.html#fale-conosco">Fale Conosco</a></li>
+            </ul>
+          </div>
+
+          <!-- COLUNA 3: ATENDIMENTO -->
+          <div class="footer-col footer-col-atendimento">
+            <h3 class="footer-col-title">ATENDIMENTO</h3>
+
+            <div class="footer-contact-block">
+              <span class="footer-contact-sub">Fale no WhatsApp</span>
+              <a href="https://wa.me/5517997140030" target="_blank" rel="noopener noreferrer" class="footer-whatsapp-link">
+                <svg class="footer-icon-gold" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                </svg>
+                <span class="footer-phone-val">(17) 9 9714-0030</span>
+              </a>
+            </div>
+
+            <div class="footer-contact-block footer-email-block">
+              <div class="footer-email-flex">
+                <svg class="footer-icon-gold" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="4"></circle>
+                  <path d="M16 8v5a3 3 0 0 0 6 0v-1a10 10 0 1 0-3.92 7.94"></path>
+                </svg>
+                <div class="footer-email-details">
+                  <span class="footer-contact-sub">Envie um e-mail</span>
+                  <a href="mailto:morarchic@morarchic.com.br" class="footer-mail-link">morarchic@morarchic.com.br</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="footer-hours-block">
+              <h4 class="footer-hours-title">HORÁRIO DE ATENDIMENTO</h4>
+              <p class="footer-hours-lines">
+                Seg - Sex das 7h30 às 23h30<br>
+                Sáb e Dom das 8h às 20h
+              </p>
+            </div>
+          </div>
+
+          <!-- COLUNA 4: FORMAS DE PAGAMENTO & SELOS DE SEGURANÇA -->
+          <div class="footer-col footer-col-badges">
+            <h3 class="footer-col-title">FORMAS DE PAGAMENTO</h3>
+            <div class="footer-payment-grid">
+              <div class="payment-card" title="Visa">
+                <svg width="34" height="12" viewBox="0 0 48 16" fill="none"><path d="M18.8 1.2L12.4 15.2H8.2L5 3.4C4.8 2.6 4.6 2.3 4 1.9C3 1.4 1.4 0.9 0 0.6L0.1 0.2H6.8C7.7 0.2 8.4 0.8 8.6 1.8L10.3 10.7L14.4 0.2H18.8ZM35.4 10.3C35.4 6.4 29.9 6.2 29.9 4.4C29.9 3.8 30.5 3.2 31.7 3C32.3 2.9 33.9 2.8 35.5 3.6L36.2 0.8C35.2 0.4 34 0 32.4 0C28.4 0 25.7 2.1 25.7 5.1C25.7 7.3 27.7 8.5 29.2 9.3C30.8 10.1 31.3 10.6 31.3 11.3C31.3 12.4 30 12.9 28.8 12.9C26.8 12.9 25.7 12.6 24.3 11.9L23.6 14.8C25.1 15.5 26.8 15.8 28.5 15.8C32.7 15.8 35.4 13.7 35.4 10.3ZM45.8 15.2H49.6L46.2 0.2H42.7C41.8 0.2 41.1 0.7 40.8 1.5L34.8 15.2H39.1L40 12.7H45.3L45.8 15.2ZM41.1 9.7L43.2 4.1L44.5 9.7H41.1ZM25 0.2L21.6 15.2H17.5L20.9 0.2H25Z" fill="#1A1F71"/></svg>
+              </div>
+              <div class="payment-card" title="Mastercard">
+                <svg width="28" height="18" viewBox="0 0 36 24" fill="none"><circle cx="13" cy="12" r="10" fill="#EB001B"/><circle cx="23" cy="12" r="10" fill="#F79E1B" fill-opacity="0.85"/></svg>
+              </div>
+              <div class="payment-card" title="Diners Club">
+                <svg width="28" height="18" viewBox="0 0 36 24" fill="none"><circle cx="18" cy="12" r="9" stroke="#004B87" stroke-width="2"/><path d="M18 5V19" stroke="#004B87" stroke-width="2"/><path d="M15 8H13C10.8 8 9 9.8 9 12C9 14.2 10.8 16 13 16H15" stroke="#004B87" stroke-width="1.8"/><path d="M21 8H23C25.2 8 27 9.8 27 12C27 14.2 25.2 16 23 16H21" stroke="#004B87" stroke-width="1.8"/></svg>
+              </div>
+              <div class="payment-card" title="American Express">
+                <svg width="28" height="18" viewBox="0 0 36 24" fill="none"><rect width="36" height="24" rx="3" fill="#0077A6"/><text x="18" y="15" fill="#ffffff" font-size="8" font-family="sans-serif" font-weight="900" text-anchor="middle" letter-spacing="0.5">AMEX</text></svg>
+              </div>
+              <div class="payment-card" title="Elo">
+                <svg width="28" height="18" viewBox="0 0 36 24" fill="none"><circle cx="18" cy="12" r="8" fill="#181818"/><circle cx="15" cy="10" r="3" fill="#EE2737"/><circle cx="21" cy="10" r="3" fill="#FFCC00"/><circle cx="18" cy="14" r="3" fill="#00A4E8"/></svg>
+              </div>
+              <div class="payment-card" title="Boleto Bancário">
+                <svg width="28" height="18" viewBox="0 0 36 24" fill="none"><rect x="5" y="4" width="26" height="16" rx="2" stroke="#666666" stroke-width="1.2"/><line x1="9" y1="8" x2="9" y2="16" stroke="#444444" stroke-width="1.5"/><line x1="12" y1="8" x2="12" y2="16" stroke="#444444" stroke-width="0.8"/><line x1="14" y1="8" x2="14" y2="16" stroke="#444444" stroke-width="2"/><line x1="18" y1="8" x2="18" y2="16" stroke="#444444" stroke-width="1"/><line x1="21" y1="8" x2="21" y2="16" stroke="#444444" stroke-width="1.5"/><line x1="24" y1="8" x2="24" y2="16" stroke="#444444" stroke-width="0.8"/><line x1="27" y1="8" x2="27" y2="16" stroke="#444444" stroke-width="2"/></svg>
+              </div>
+              <div class="payment-card" title="Bradesco">
+                <svg width="28" height="18" viewBox="0 0 36 24" fill="none"><rect width="36" height="24" rx="3" fill="#CC092F"/><path d="M18 6C15 6 12 8 12 11C12 14 15 16 18 16C21 16 24 14 24 11C24 8 21 6 18 6Z" stroke="#ffffff" stroke-width="1.2"/><path d="M15 17L18 13L21 17" stroke="#ffffff" stroke-width="1.2"/></svg>
+              </div>
+              <div class="payment-card" title="Banco do Brasil">
+                <svg width="28" height="18" viewBox="0 0 36 24" fill="none"><rect width="36" height="24" rx="3" fill="#FFF100"/><text x="18" y="16" fill="#003882" font-size="11" font-family="sans-serif" font-weight="900" text-anchor="middle">BB</text></svg>
+              </div>
+              <div class="payment-card" title="Pix">
+                <svg width="28" height="18" viewBox="0 0 36 24" fill="none"><path d="M18 5L24 12L18 19L12 12L18 5Z" stroke="#32BCAD" stroke-width="2" fill="none"/><circle cx="18" cy="12" r="2.5" fill="#32BCAD"/></svg>
+              </div>
+            </div>
+
+            <!-- SELOS DE SEGURANÇA -->
+            <h3 class="footer-col-title footer-sec-title">SELOS DE SEGURANÇA</h3>
+            <div class="footer-security-wrap">
+              <div class="security-seal-google" title="Google Safe Browsing">
+                <svg class="google-shield-icon" width="22" height="22" viewBox="0 0 24 24" fill="none">
+                  <path d="M12 2L4 5V11C4 16.5 7.4 21.6 12 23C16.6 21.6 20 16.5 20 11V5L12 2Z" fill="#34A853"/>
+                  <path d="M9 12L11 14L15 9" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <div class="google-seal-text">
+                  <span class="google-label">Google</span>
+                  <span class="safe-label">Safe Browsing</span>
+                </div>
+              </div>
+
+              <div class="security-seal-loja" title="Loja Protegida">
+                <div class="loja-shield">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                    <path d="M12 2L3 6V12C3 17.5 6.8 22.5 12 24C17.2 22.5 21 17.5 21 12V6L12 2Z" fill="#E67E22" stroke="#D35400" stroke-width="1"/>
+                    <rect x="8" y="11" width="8" height="6" rx="1" fill="#2C3E50"/>
+                    <path d="M10 11V9C10 7.9 10.9 7 12 7C13.1 7 14 7.9 14 9V11" stroke="#2C3E50" stroke-width="1.5"/>
+                  </svg>
+                </div>
+                <div class="loja-text-block">
+                  <span class="loja-title">LOJA PROTEGIDA</span>
+                  <span class="loja-sub">SAIBA O PORQUÊ</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </footer>
+
+  </main>
+
+  <!-- ==================== SACOLA DE COMPRAS LATERAL (CART DRAWER) ==================== -->
+  <div class="cart-drawer-backdrop" id="cartDrawerBackdrop" aria-hidden="true"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-hidden="true" role="dialog" aria-label="Sacola de Compras">
+    <div class="cart-drawer-inner">
+      <div class="cart-drawer-header">
+        <div class="cart-drawer-title-wrap">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <path d="M16 10a4 4 0 0 1-8 0"/>
+          </svg>
+          <h3 class="cart-drawer-title">Sua Sacola (<span id="cartCountTitle">0</span>)</h3>
+        </div>
+        <button type="button" class="cart-drawer-close" id="cartDrawerClose" aria-label="Fechar Sacola">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <line x1="18" y1="6" x2="6" y2="18"/>
+            <line x1="6" y1="6" x2="18" y2="18"/>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Lista de Itens -->
+      <div class="cart-drawer-body" id="cartDrawerBody"></div>
+
+      <!-- Rodapé da Sacola -->
+      <div class="cart-drawer-footer" id="cartDrawerFooter">
+        <div class="cart-drawer-shipping-notice">
+          <span>✨ Frete Cortesia para compras desta coleção</span>
+        </div>
+        <div class="cart-drawer-subtotal-row">
+          <span>Subtotal</span>
+          <strong id="cartSubtotalVal">R$ 0,00</strong>
+        </div>
+        <div class="cart-drawer-actions">
+          <a href="#" class="cart-checkout-btn" id="cartCheckoutBtn">
+            <span>Finalizar Compra</span>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+          <button type="button" class="cart-continue-btn" id="cartContinueBtn">Continuar Comprando</button>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <script src="script.js?v=20261104h"></script>
+</body>
+</html>

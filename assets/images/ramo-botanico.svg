@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 52" width="130" height="42" fill="none" stroke="#2c2825" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+  <!-- Haste principal sinuosa orgânica -->
+  <path d="M 12 36 C 35 24, 60 38, 90 22 C 115 12, 138 26, 148 18" stroke-width="1.3"/>
+  <path d="M 38 29 C 48 20, 56 16, 68 18" stroke-width="1"/>
+  <path d="M 85 24 C 95 32, 108 36, 118 32" stroke-width="1"/>
+
+  <!-- Folha 1 (esquerda inferior) -->
+  <path d="M 18 35 C 15 42, 22 46, 28 42 C 30 38, 25 35, 18 35 Z" fill="#2c2825" fill-opacity="0.12"/>
+  <line x1="20" y1="37" x2="26" y2="41" stroke-width="0.8"/>
+
+  <!-- Folha 2 (esquerda superior) -->
+  <path d="M 32 26 C 28 18, 35 14, 40 18 C 42 22, 38 25, 32 26 Z" fill="#2c2825" fill-opacity="0.12"/>
+  <line x1="34" y1="23" x2="38" y2="19" stroke-width="0.8"/>
+
+  <!-- Flor 1 (esquerda) -->
+  <g transform="translate(48, 22)">
+    <circle cx="0" cy="0" r="2.2" fill="#2c2825"/>
+    <path d="M 0 -2.2 C -3 -7, 3 -7, 0 -2.2 Z" fill="#ffffff" stroke="#2c2825" stroke-width="1"/>
+    <path d="M 2.2 0 C 7 -3, 7 3, 2.2 0 Z" fill="#ffffff" stroke="#2c2825" stroke-width="1"/>
+    <path d="M 1.5 1.5 C 5 6, 0 8, 1.5 1.5 Z" fill="#ffffff" stroke="#2c2825" stroke-width="1"/>
+    <path d="M -1.5 1.5 C -5 6, 0 8, -1.5 1.5 Z" fill="#ffffff" stroke="#2c2825" stroke-width="1"/>
+    <path d="M -2.2 0 C -7 -3, -7 3, -2.2 0 Z" fill="#ffffff" stroke="#2c2825" stroke-width="1"/>
+    <!-- Estames centrais -->
+    <circle cx="-0.8" cy="-0.6" r="0.4" fill="#2c2825"/>
+    <circle cx="0.8" cy="-0.6" r="0.4" fill="#2c2825"/>
+    <circle cx="0" cy="0.9" r="0.4" fill="#2c2825"/>
+  </g>
+
+  <!-- Folhas centrais -->
+  <path d="M 66 28 C 68 37, 76 38, 80 32 C 78 28, 72 26, 66 28 Z" fill="#2c2825" fill-opacity="0.12"/>
+  <path d="M 72 17 C 76 9, 85 10, 86 16 C 82 19, 76 18, 72 17 Z" fill="#2c2825" fill-opacity="0.12"/>
+
+  <!-- Flor 2 (centro-direita proeminente) -->
+  <g transform="translate(102, 19)">
+    <circle cx="0" cy="0" r="2.6" fill="#2c2825"/>
+    <path d="M 0 -2.6 C -3.5 -8.5, 3.5 -8.5, 0 -2.6 Z" fill="#ffffff" stroke="#2c2825" stroke-width="1.1"/>
+    <path d="M 2.6 -0.8 C 8 -4, 9 2.5, 2.6 -0.8 Z" fill="#ffffff" stroke="#2c2825" stroke-width="1.1"/>
+    <path d="M 1.6 2 C 5 7.5, -0.5 9, 1.6 2 Z" fill="#ffffff" stroke="#2c2825" stroke-width="1.1"/>
+    <path d="M -1.6 2 C -5 7.5, 0.5 9, -1.6 2 Z" fill="#ffffff" stroke="#2c2825" stroke-width="1.1"/>
+    <path d="M -2.6 -0.8 C -8 -4, -9 2.5, -2.6 -0.8 Z" fill="#ffffff" stroke="#2c2825" stroke-width="1.1"/>
+    <!-- Estames centrais -->
+    <circle cx="-0.9" cy="-0.8" r="0.5" fill="#2c2825"/>
+    <circle cx="0.9" cy="-0.8" r="0.5" fill="#2c2825"/>
+    <circle cx="0" cy="1" r="0.5" fill="#2c2825"/>
+  </g>
+
+  <!-- Folhas direita -->
+  <path d="M 116 26 C 122 34, 131 32, 132 25 C 127 23, 120 23, 116 26 Z" fill="#2c2825" fill-opacity="0.12"/>
+  <path d="M 125 14 C 130 7, 139 9, 139 15 C 134 17, 128 16, 125 14 Z" fill="#2c2825" fill-opacity="0.12"/>
+
+  <!-- Flor 3 (botão/ramo lateral direito) -->
+  <g transform="translate(142, 17)">
+    <circle cx="0" cy="0" r="1.8" fill="#2c2825"/>
+    <path d="M 0 -1.8 C -2 -5, 2 -5, 0 -1.8 Z" fill="#ffffff" stroke="#2c2825" stroke-width="0.9"/>
+    <path d="M 1.8 0 C 5 -2, 5 2, 1.8 0 Z" fill="#ffffff" stroke="#2c2825" stroke-width="0.9"/>
+    <path d="M 0 1.8 C 2 5, -2 5, 0 1.8 Z" fill="#ffffff" stroke="#2c2825" stroke-width="0.9"/>
+    <path d="M -1.8 0 C -5 2, -5 -2, -1.8 0 Z" fill="#ffffff" stroke="#2c2825" stroke-width="0.9"/>
+  </g>
+</svg>
